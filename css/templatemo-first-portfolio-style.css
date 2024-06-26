@@ -1241,3 +1241,31 @@ strong {
 .download-resume button:hover {
   background-color: var(--secondary-color);
 }
+
+.teaching-philosophy {
+  background-color: var(--section-bg-color);
+  color: var(--dark-color);
+}
+
+.teaching-philosophy .philosophy-item {
+  padding: 20px;
+  background-color: var(--white-color);
+  border-radius: var(--border-radius-small);
+  margin-bottom: 20px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.teaching-philosophy .philosophy-item i {
+  font-size: 24px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.teaching-philosophy h3 {
+  color: var(--primary-color);
+}
+
+.teaching-philosophy p {
+  font-size: var(--p-font-size);
+  color: var(--p-color);
+}
