@@ -156,8 +156,8 @@ strong {
 -----------------------------------------*/
 .avatar-image {
   border-radius: var(--border-radius-large);
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
 }
 
@@ -1268,4 +1268,80 @@ strong {
 .teaching-philosophy p {
   font-size: var(--p-font-size);
   color: var(--p-color);
+}
+
+/*---------------------------------------
+  CERT SECTION              
+-----------------------------------------*/
+
+.certifications {
+  background-color: var(--white-color);
+  color: var(--dark-color);
+}
+
+.certifications .certification-item {
+  padding: 20px;
+  background-color: var(--section-bg-color);
+  border-radius: var(--border-radius-small);
+  margin-bottom: 20px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.certifications .certification-item i {
+  font-size: 30px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.certifications h3 {
+  color: var(--primary-color);
+}
+
+.certifications p {
+  font-size: var(--p-font-size);
+  color: var(--p-color);
+}
+
+/*---------------------------------------
+  Classroom management SECTION              
+-----------------------------------------*/
+
+.classroom-management {
+  background-color: var(--white-color);
+  color: var(--dark-color);
+}
+
+.classroom-management .management-item {
+  padding: 20px;
+  background-color: var(--section-bg-color);
+  border-radius: var(--border-radius-small);
+  margin-bottom: 20px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.classroom-management .management-item i {
+  font-size: 30px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.classroom-management p {
+  font-size: var(--p-font-size);
+  color: var(--p-color);
+  margin-bottom: 15px;
+}
+
+.classroom-management a button {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--border-radius-small);
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.classroom-management a button:hover {
+  background-color: var(--secondary-color);
 }
