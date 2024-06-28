@@ -1345,3 +1345,78 @@ strong {
 .classroom-management a button:hover {
   background-color: var(--secondary-color);
 }
+
+/*---------------------------------------
+  Styling to make home section video a circle           
+-----------------------------------------*/
+
+.video-container {
+  width: 315px;
+  /* Match height for perfect circle */
+  height: 315px;
+  /* Match width for perfect circle */
+  margin: auto;
+  /* Center the container */
+  overflow: hidden;
+  /* Hide anything outside the circle */
+  border-radius: 50%;
+  /* Circular shape */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-container iframe {
+  border-radius: 50%;
+  /* Circular shape for the video */
+  width: 100%;
+  /* Full width of the container */
+  height: auto;
+  /* Maintain aspect ratio */
+  object-fit: cover;
+  /* Cover the area without stretching */
+}
+
+/*---------------------------------------
+  Technology Integration Section           
+-----------------------------------------*/
+
+.tech-integration {
+  background-color: var(--section-bg-color);
+  color: var(--dark-color);
+  padding: 60px 0;
+}
+
+.tech-integration .section-title-wrap {
+  background: var(--primary-color);
+  padding: 10px 20px;
+  border-radius: var(--border-radius-small);
+  margin-bottom: 30px;
+}
+
+.tech-integration h2 {
+  color: var(--white-color);
+}
+
+.tech-integration .tech-content {
+  padding: 20px;
+  background-color: var(--white-color);
+  border-radius: var(--border-radius-small);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tech-integration .tech-area {
+  margin-top: 20px;
+}
+
+.tech-integration h3 {
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+
+.tech-integration p {
+  font-size: var(--p-font-size);
+  color: var(--p-color);
+  line-height: 1.6;
+}
