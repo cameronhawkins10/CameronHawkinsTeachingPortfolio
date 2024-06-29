@@ -540,7 +540,6 @@ strong {
   pointer-events: none;
 }
 
-
 /*---------------------------------------
   ABOUT              
 -----------------------------------------*/
@@ -1302,6 +1301,98 @@ strong {
   color: var(--p-color);
 }
 
+.certifications {
+  background-color: var(--section-bg-color);
+  text-align: center;
+  padding: 60px 0;
+}
+
+.certificate {
+  border: 3px solid var(--primary-color);
+  padding: 40px;
+  margin-bottom: 20px;
+  position: relative;
+  background-color: var(--white-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-image: url('data:image/svg+xml;utf8,<svg width="100%25" height="100%25" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="100%25" height="100%25" fill="none" stroke="var(--primary-color)" stroke-width="4" stroke-dasharray="10,10" /></svg>');
+  /* Decorative dashed border */
+}
+
+.certificate-header h2 {
+  color: var(--primary-color);
+  margin: 0;
+  font-size: 24px;
+  /* Slightly larger for emphasis */
+}
+
+.certificate-seal {
+  width: 80px;
+  /* Slightly larger seal */
+  height: 80px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  opacity: 0.75;
+  /* More visible */
+}
+
+.certificate-text {
+  color: var(--dark-color);
+  font-size: var(--p-font-size);
+  margin-top: 20px;
+  padding: 0 20px;
+  /* Padding for better text alignment */
+}
+
+@media (max-width: 768px) {
+  .certifications {
+    padding: 40px 20px;
+  }
+
+  .certificate {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.certifications {
+  background-color: var(--section-bg-color);
+  text-align: center;
+  padding: 60px 0;
+}
+
+.certificates-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* Evenly spaces the certificates, adds space around them */
+  gap: 20px;
+  /* Adds space between certificates */
+}
+
+.certificate {
+  flex: 1 1 45%;
+  /* Each certificate can grow and shrink but starts with 45% of the container’s width */
+  border: 3px solid var(--primary-color);
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: var(--white-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .certificates-row {
+    flex-direction: column;
+  }
+
+  .certificate {
+    flex: 1 1 100%;
+    /* Each certificate takes full width on small screens */
+  }
+}
+
+
 /*---------------------------------------
   Classroom management SECTION              
 -----------------------------------------*/
@@ -1347,38 +1438,6 @@ strong {
 }
 
 /*---------------------------------------
-  Styling to make home section video a circle           
------------------------------------------*/
-
-.video-container {
-  width: 315px;
-  /* Match height for perfect circle */
-  height: 315px;
-  /* Match width for perfect circle */
-  margin: auto;
-  /* Center the container */
-  overflow: hidden;
-  /* Hide anything outside the circle */
-  border-radius: 50%;
-  /* Circular shape */
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.video-container iframe {
-  border-radius: 50%;
-  /* Circular shape for the video */
-  width: 85%;
-  /* Full width of the container */
-  height: 75%;
-  /* Maintain aspect ratio */
-  object-fit: cover;
-  /* Cover the area without stretching */
-}
-
-/*---------------------------------------
   Technology Integration Section           
 -----------------------------------------*/
 
@@ -1420,3 +1479,7 @@ strong {
   color: var(--p-color);
   line-height: 1.6;
 }
+
+/*---------------------------------------
+  Updated Home Section           
+-----------------------------------------*/
