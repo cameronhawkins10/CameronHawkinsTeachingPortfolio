@@ -1370,9 +1370,9 @@ strong {
 .video-container iframe {
   border-radius: 50%;
   /* Circular shape for the video */
-  width: 100%;
+  width: 85%;
   /* Full width of the container */
-  height: auto;
+  height: 75%;
   /* Maintain aspect ratio */
   object-fit: cover;
   /* Cover the area without stretching */
