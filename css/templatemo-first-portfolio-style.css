@@ -1483,3 +1483,281 @@ strong {
 /*---------------------------------------
   Updated Home Section           
 -----------------------------------------*/
+
+video {
+  width: 100%;
+  max-width: 300px;
+}
+
+.unmute-message {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.unmute-message {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.hero h1,
+.hero p {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .hero .row {
+    flex-direction: column;
+  }
+
+  .video-container,
+  .hero h1,
+  .hero p {
+    text-align: center;
+  }
+}
+
+/*---------------------------------------
+  Home Section- making sure svg is behind video and text           
+-----------------------------------------*/
+
+.hero .container {
+  z-index: 3;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+@media (max-width: 768px) {
+  .hero .row {
+    flex-direction: column;
+  }
+
+  .video-container,
+  .hero h1,
+  .hero p {
+    text-align: center;
+  }
+}
+
+/*---------------------------------------
+  About Section          
+-----------------------------------------*/
+
+.section-padding {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.about-headshot {
+  border-radius: 50%;
+  width: 100%;
+  /* Ensures the image is responsive */
+  max-width: 300px;
+  /* Controls the maximum size of the image */
+  margin-bottom: 20px;
+  /* Adds space below the image on smaller screens */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Adds a subtle shadow for depth */
+}
+
+.about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  /* Use your primary color variable */
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--p-color);
+  /* Use your paragraph text color variable */
+  margin-bottom: 20px;
+  /* Adds space between paragraphs */
+}
+
+@media (max-width: 768px) {
+  .about .row {
+    flex-direction: column;
+    /* Stacks the columns vertically on smaller screens */
+  }
+
+  .about-headshot {
+    margin-bottom: 20px;
+    /* Adds space below the image on smaller screens */
+  }
+}
+
+/*---------------------------------------
+  Resume Section          
+-----------------------------------------*/
+
+/* General Section Padding */
+.section-padding {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Resume Document Styling */
+.resume-document {
+  border: 2px solid var(--border-color);
+  /* Add border to the resume */
+  padding: 30px;
+  /* Add padding inside the border */
+  background: var(--white-color);
+  /* Ensure background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Add subtle shadow for depth */
+  max-width: 800px;
+  /* Control the maximum width of the resume document */
+  margin: 0 auto;
+  /* Center the resume document */
+}
+
+/* Heading Styles */
+.resume h1 {
+  font-size: 36px;
+  /* Adjust the title font size */
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  text-align: center;
+  /* Center align the title */
+}
+
+.resume h2 {
+  font-size: 24px;
+  /* Smaller section heading font size */
+  margin-bottom: 15px;
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--border-color);
+  /* Add underline to section headings */
+  padding-bottom: 5px;
+}
+
+.resume h3 {
+  font-size: 18px;
+  /* Smaller job title font size */
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+/* Paragraph and List Styles */
+.resume p {
+  font-size: 14px;
+  /* Smaller paragraph font size */
+  line-height: 1.6;
+  color: var(--dark-color);
+  /* Use a dark color for readability */
+  margin-bottom: 10px;
+  /* Add space between paragraphs */
+}
+
+.resume ul {
+  padding-left: 20px;
+  /* Indent list items */
+  margin-bottom: 20px;
+  /* Add space below lists */
+}
+
+.resume ul li {
+  font-size: 14px;
+  /* Match font size of paragraphs */
+  line-height: 1.4;
+  color: var(--dark-color);
+  /* Use a dark color for readability */
+  margin-bottom: 5px;
+  /* Add space between list items */
+}
+
+/* Download Button Styling */
+.download-resume {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.download-resume .btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.download-resume .btn:hover {
+  background-color: var(--primary-color-dark);
+  /* Darker shade for hover effect */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .resume-document {
+    padding: 20px;
+    /* Adjust padding for smaller screens */
+  }
+
+  .resume h1 {
+    font-size: 28px;
+    /* Adjust title font size for smaller screens */
+  }
+
+  .resume h2 {
+    font-size: 20px;
+    /* Adjust section heading font size for smaller screens */
+  }
+
+  .resume h3 {
+    font-size: 16px;
+    /* Adjust job title font size for smaller screens */
+  }
+
+  .resume p,
+  .resume ul li {
+    font-size: 12px;
+    /* Adjust text size for smaller screens */
+  }
+}
+
+/*---------------------------------------
+  Pictures Section          
+-----------------------------------------*/
+
+.section-padding {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.gallery .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.gallery-img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .gallery .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery .col-lg-4 {
+    margin-bottom: 20px;
+  }
+}
