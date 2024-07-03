@@ -1273,122 +1273,108 @@ strong {
   CERT SECTION              
 -----------------------------------------*/
 
-.certifications {
-  background-color: var(--white-color);
-  color: var(--dark-color);
-}
-
-.certifications .certification-item {
-  padding: 20px;
-  background-color: var(--section-bg-color);
-  border-radius: var(--border-radius-small);
-  margin-bottom: 20px;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-}
-
-.certifications .certification-item i {
-  font-size: 30px;
-  color: var(--primary-color);
-  margin-bottom: 10px;
-}
-
-.certifications h3 {
-  color: var(--primary-color);
-}
-
-.certifications p {
-  font-size: var(--p-font-size);
-  color: var(--p-color);
-}
-
-.certifications {
-  background-color: var(--section-bg-color);
-  text-align: center;
-  padding: 60px 0;
-}
-
-.certificate {
-  border: 3px solid var(--primary-color);
-  padding: 40px;
-  margin-bottom: 20px;
-  position: relative;
-  background-color: var(--white-color);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-image: url('data:image/svg+xml;utf8,<svg width="100%25" height="100%25" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="100%25" height="100%25" fill="none" stroke="var(--primary-color)" stroke-width="4" stroke-dasharray="10,10" /></svg>');
-  /* Decorative dashed border */
-}
-
-.certificate-header h2 {
-  color: var(--primary-color);
-  margin: 0;
-  font-size: 24px;
-  /* Slightly larger for emphasis */
-}
-
-.certificate-seal {
-  width: 80px;
-  /* Slightly larger seal */
-  height: 80px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  opacity: 0.75;
-  /* More visible */
-}
-
-.certificate-text {
-  color: var(--dark-color);
-  font-size: var(--p-font-size);
-  margin-top: 20px;
-  padding: 0 20px;
-  /* Padding for better text alignment */
-}
-
-@media (max-width: 768px) {
-  .certifications {
-    padding: 40px 20px;
-  }
-
-  .certificate {
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-}
-
-.certifications {
-  background-color: var(--section-bg-color);
-  text-align: center;
-  padding: 60px 0;
-}
-
-.certificates-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  /* Evenly spaces the certificates, adds space around them */
-  gap: 20px;
-  /* Adds space between certificates */
-}
-
 .certificate {
   flex: 1 1 45%;
   /* Each certificate can grow and shrink but starts with 45% of the container’s width */
-  border: 3px solid var(--primary-color);
+  border: 15px outset var(--primary-color);
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   background-color: var(--white-color);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
 }
 
+/*---------------------------------------
+  CERT SECTION              
+-----------------------------------------*/
+
+/* General Section Padding */
+.section-padding {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Certifications Section */
+.certifications {
+  background-color: var(--white-color);
+  color: var(--dark-color);
+  text-align: center;
+  padding: 60px 0;
+}
+
+/* Certificate Wrapper */
+.certificate-wrapper {
+  border: 2px solid var(--border-color);
+  /* Border similar to resume */
+  padding: 30px;
+  /* Add padding inside the border */
+  background: var(--white-color);
+  /* Ensure background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Add subtle shadow for depth */
+  border-radius: 0px;
+  /* Rounded corners */
+  margin-bottom: 20px;
+  /* Space between certificates */
+  flex: 1 1 45%;
+  /* Flex property for responsive layout */
+  margin: 10px;
+  /* Add margin for spacing in row layout */
+}
+
+/* Container Flexbox */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* Center the items */
+}
+
+/* Certificate Header */
+.certificate-header h2 {
+  color: var(--primary-color);
+  margin: 0;
+  font-size: 35px;
+}
+
+/* Certificate Text */
+.certificate-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--p-color);
+  margin-bottom: 20px;
+}
+
+.certificate-header i {
+  font-size: 30px;
+  color: var(--primary-color);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-  .certificates-row {
+  .container {
     flex-direction: column;
+    /* Stack items vertically on smaller screens */
   }
 
-  .certificate {
+  .certificate-wrapper {
     flex: 1 1 100%;
-    /* Each certificate takes full width on small screens */
+    /* Full width on small screens */
+    margin: 0 0 20px 0;
+    /* Remove side margins, keep bottom margin */
+    padding: 20px;
+    /* Adjust padding for smaller screens */
+  }
+
+  .certificate-header h2 {
+    font-size: 20px;
+    /* Adjust heading font size for smaller screens */
+  }
+
+  .certificate-text {
+    font-size: 14px;
+    /* Adjust text size for smaller screens */
   }
 }
 
@@ -1577,7 +1563,7 @@ video {
 }
 
 .about p {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.6;
   color: var(--p-color);
   /* Use your paragraph text color variable */
@@ -1761,3 +1747,81 @@ video {
     margin-bottom: 20px;
   }
 }
+
+/*---------------------------------------
+  Updated Teaching Philosophy Section          
+-----------------------------------------*/
+
+.teaching-philosophy {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 60px 0;
+}
+
+.section-title-wrap {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.nav-tabs {
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.nav-tabs .nav-link {
+  color: var(--white-color);
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+}
+
+.nav-tabs .nav-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.tab-content {
+  background-color: var(--white-color);
+  color: var(--dark-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tab-pane i {
+  font-size: 30px;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.tab-pane h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.tab-pane p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .tab-content {
+    padding: 15px;
+  }
+
+  .tab-pane i {
+    font-size: 25px;
+  }
+
+  .tab-pane h3 {
+    font-size: 18px;
+  }
+
+  .tab-pane p {
+    font-size: 14px;
+  }
+}
+
+/*---------------------------------------
+  Updated Contact Section          
+-----------------------------------------*/
