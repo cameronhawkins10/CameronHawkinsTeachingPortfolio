@@ -766,32 +766,6 @@ strong {
   margin-bottom: 5px;
 }
 
-
-/*---------------------------------------
-  CONTACT              
------------------------------------------*/
-.contact {
-  background: var(--section-bg-color);
-}
-
-.contact-info {
-  background: var(--white-color);
-  border-top-right-radius: var(--border-radius-small);
-  border-bottom-right-radius: var(--border-radius-small);
-  padding: 60px 30px 30px 30px;
-  height: 100%;
-}
-
-.contact-info-border-start {
-  border-right: 1px solid var(--border-color);
-  border-radius: var(--border-radius-small) 0 0 var(--border-radius-small);
-}
-
-.contact-form {
-  margin-left: 10px;
-}
-
-
 /*---------------------------------------
   CUSTOM FORM               
 -----------------------------------------*/
@@ -1823,5 +1797,93 @@ video {
 }
 
 /*---------------------------------------
-  Updated Tech Integration Section          
+  Classroom Management Section          
 -----------------------------------------*/
+
+.accordion-button {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.accordion-body {
+  background-color: var(--white-color);
+  color: var(--dark-color);
+  padding: 20px;
+  border: 1px solid var(--primary-color);
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+  border-radius: var(--border-radius-small);
+  overflow: hidden;
+}
+
+/*---------------------------------------
+  Contact Section          
+-----------------------------------------*/
+
+/* Contact Section */
+.section-padding {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.contact-header {
+  font-size: var(--h2-font-size);
+  color: var(--primary-color);
+  margin-bottom: 40px;
+}
+
+.contact-card {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-medium);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-card .card-body {
+  padding: 20px;
+}
+
+.contact-card .card-title {
+  font-size: var(--h3-font-size);
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.contact-card .card-text {
+  font-size: var(--p-font-size);
+  color: var(--p-color);
+  margin-bottom: 10px;
+}
+
+.contact-card .card-text i {
+  color: var(--secondary-color);
+  margin-right: 10px;
+}
+
+/* Media Queries for Larger Screens */
+@media (min-width: 992px) {
+  .row .col-lg-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+}
