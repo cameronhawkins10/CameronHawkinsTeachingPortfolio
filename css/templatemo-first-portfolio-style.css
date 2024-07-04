@@ -1851,6 +1851,8 @@ video {
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex: 0 0 45%;
+  margin: 0 2.5%;
 }
 
 .contact-card .card-body {
@@ -1874,16 +1876,21 @@ video {
   margin-right: 10px;
 }
 
-/* Media Queries for Larger Screens */
-@media (min-width: 992px) {
-  .row .col-lg-6 {
-    display: flex;
-    justify-content: center;
+.contact-cards-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 991.98px) {
+  .contact-cards-row {
+    flex-direction: column;
     align-items: center;
   }
 
-  .row {
-    display: flex;
-    justify-content: center;
+  .contact-card {
+    flex: 0 0 100%;
+    margin: 10px 0;
   }
 }
