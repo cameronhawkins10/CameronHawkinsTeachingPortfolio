@@ -1894,3 +1894,25 @@ video {
     margin: 10px 0;
   }
 }
+
+/* new contact */
+
+.contact-header {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-card {
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size
